@@ -159,7 +159,7 @@ Sin embargo en algunos casos puntuales (como en los Journey Aniversario o Cumple
 
    Principalmente se han utilizado las actividades SQL Query y Verification.
 
-   |image1|
+.. centered:: |image1|
 
 -  SQL Query: Esta actividad ejecuta una consulta mediante query sobre la Data Extension objetivo y una acción tras haber realizado la consulta. La acción es sobre una Data Extension a seleccionar (no es Data Extension objetivo) y permite añadir, añadir si no existe o actualizar si existe, o sobrescribir sobre la Data Extension seleccionada.
 
@@ -181,15 +181,15 @@ Sin embargo en algunos casos puntuales (como en los Journey Aniversario o Cumple
 
 -  Definen el canal utilizado para el envío de la comunicación (por ejemplo email, sms, notificación push, ...), añaden la creatividad a la comunicación y realizan su envío.
 
-|image2|
+.. centered:: |image2|
 
 -  Controlan el flujo que realizan los clientes imponiendo condiciones o Inteligencia Artificial.
 
-|image3|
+.. centered:: |image3|
 
 -  Modifica los datos de un registro en Marketing Cloud.
 
-|image4|
+.. centered:: |image4|
 
 -  Procesos auxiliares
 
@@ -217,14 +217,14 @@ Sin embargo en algunos casos puntuales (como en los Journey Aniversario o Cumple
    :width: 2.73333in
    :height: 3.15357in
 .. |image1| image:: media/image2.png
-   :width: 1.63472in
-   :height: 3.46658in
+   :width: 2.63472in
+   :height: 4.46658in
 .. |image2| image:: media/image3.png
-   :width: 1.16853in
-   :height: 1.77976in
+   :width: 2.16853in
+   :height: 2.77976in
 .. |image3| image:: media/image4.png
-   :width: 0.97594in
-   :height: 2.97024in
+   :width: 1.97594in
+   :height: 3.97024in
 .. |image4| image:: media/image5.png
-   :width: 0.5372in
-   :height: 0.62202in
+   :width: 1.5372in
+   :height: 1.62202in

@@ -305,46 +305,50 @@ Página de Inicio
 
 La página de Inicio del Contact Center muestra principalmente una serie de KPIs sobre los tickets existentes:
 
-|image1|\ También en la página de Inicio se muestra un centro de mensajes y los eventos asociados al usuario registrado en la plataforma Salesforce Service Cloud.
+.. centered:: |image1| 
+
+También en la página de Inicio se muestra un centro de mensajes y los eventos asociados al usuario registrado en la plataforma Salesforce Service Cloud.
 
 Menu del Contact Center
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 Los distintos apartados del Contact Center son accesibles desde el siguiente menú:
 
-|image2|
+.. centered:: |image2|
 
 Datos en Service Cloud
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Para visualizar clientes, tickets, ... seleccionando el apartado correspondiente a ese objeto se accede a una interfaz que muestra un listado de los registros buscados. Se pueden generar distintos listados personalizados que muestren los registros que cumplan unos criterios específicos.
 
-|image3|
+.. centered:: |image3|
 
-|image4|\ Seleccionando un registro del listado se accede a la interfaz de detalles y a toda la información relacionada con dicho registro.
+.. centered:: |image4|
+
+Seleccionando un registro del listado se accede a la interfaz de detalles y a toda la información relacionada con dicho registro.
 
 Calendario
 ~~~~~~~~~~
 
 El apartado Calendario da acceso a una agenda con los eventos asociados al usuario que haya realizado el registro. Por defecto se muestra como calendario semanal.
 
-|image5|
+.. centered:: |image5|
 
-.. |image0| image:: media/image1.png
+.. |image0| image:: media1/image1.png
    :width: 2.73333in
    :height: 3.15357in
-.. |image1| image:: media/image2.png
-   :width: 5.90556in
-   :height: 3.95417in
-.. |image2| image:: media/image3.png
+.. |image1| image:: media1/image2.png
+   :width: 4.90556in
+   :height: 2.95417in
+.. |image2| image:: media1/image3.png
    :width: 1.64181in
    :height: 3.1336in
-.. |image3| image:: media/image4.png
+.. |image3| image:: media1/image4.png
    :width: 5.90556in
    :height: 2.54097in
-.. |image4| image:: media/image5.png
+.. |image4| image:: media1/image5.png
    :width: 5.35119in
    :height: 3.90194in
-.. |image5| image:: media/image6.png
+.. |image5| image:: media1/image6.png
    :width: 5.85556in
    :height: 4.18681in
