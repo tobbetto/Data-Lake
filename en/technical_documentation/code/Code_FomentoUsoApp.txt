@@ -1,0 +1,86 @@
+select a.ID,a.Id_Contacto__c,a.AccountId,a.ContactKey,a.CambiaSegmento,
+    a.Email,a.MC_MobilePhone,
+	a.Fecha_de_ultimo_pedido__c,a.TP_Ticket_Medio__c,a.Fecha_Ultimo_Envio,
+	a.Fecha_de_primer_pedido__c,a.TP_Canal_Habitual__c
+from ClientesTelepizza a
+where a.CambiaSegmento = 0
+and a.Fecha_de_ultimo_pedido__c = cast(getdate()-1 as date)
+and a.TP_Ticket_Medio__c > 0
+and a.TP_Ticket_Medio__c  is not null
+and a.Fecha_Ultimo_Envio <= cast(getdate()-3 as date)
+and a.Fecha_de_ultimo_pedido__c != a.Fecha_de_primer_pedido__c
+and (a.TP_Canal_Habitual__c = 410 or 
+a.TP_Canal_Habitual__c = 411 or 
+a.TP_Canal_Habitual__c = 420 or 
+a.TP_Canal_Habitual__c = 421 or 
+a.TP_Canal_Habitual__c = 430 or 
+a.TP_Canal_Habitual__c = 431 or 
+a.TP_Canal_Habitual__c = 440 or 
+a.TP_Canal_Habitual__c = 441 or 
+a.TP_Canal_Habitual__c = 434 or 
+a.TP_Canal_Habitual__c = 400 or 
+a.TP_Canal_Habitual__c = 445 or 
+a.TP_Canal_Habitual__c = 433)
+and a.ID not in (select b.ID from VT_CA_FomentoUsoApp_Historico b 
+where b.ID=a.ID and b.Fecha_Proceso > cast(getdate()-90 as date))
+
+***********************************************************************************************
+
+select top 10 percent *
+from ESP_VT_FomentoUsoApp
+where TP_Ticket_Medio__c <= 10
+order by newid()
+
+***********************************************************************************************
+
+select 1 as GrupoControl,a.Id,a.ContactKey 
+from ESP_VT_FomentoUsoApp a
+join ESP_VT_FomentoUsoApp_GC b on a.Id=b.Id
+
+***********************************************************************************************
+
+select * 
+from ESP_VT_FomentoUsoApp 
+where GrupoControl = 0
+
+***********************************************************************************************
+
+Select c.cupon,
+       b.Id,
+       b.ContactKey
+From (
+SELECT Id,ContactKey, ROW_NUMBER() OVER (ORDER BY Id) as tp_rank
+from ESP_VT_FomentoUsoApp a
+where (a.GrupoControl=0 and a.TP_Ticket_Medio__c <= 10)
+) b
+left Join (
+SELECT cupon, ROW_NUMBER() OVER (ORDER BY cupon) as c_rank
+from ESP_VT_FomentoUsoApp_Cupones_Seg1
+where Asignado = 0
+) c
+ON b.tp_rank = c.c_rank
+
+***********************************************************************************************
+
+Select 1 as Asignado, GETDATE() as FechaAsignacion, a.Cupon 
+from ESP_VT_FomentoUsoApp_SinGC a
+join ESP_VT_FomentoUsoApp_Cupones_Seg1 b on a.Cupon=b.Cupon
+
+***********************************************************************************************
+
+select *
+from ESP_VT_FomentoUsoApp_SinGC
+where cupon is null
+
+***********************************************************************************************
+
+Select *,getDate() as Fecha_Proceso
+from ESP_VT_FomentoUsoApp
+
+***********************************************************************************************
+
+SELECT Cupon, Asignado, FechaAsignacion
+from 	ESP_VT_FomentoUsoApp_Cupones_Seg1
+where Asignado = 0
+
+***********************************************************************************************
