@@ -45,7 +45,7 @@ Este entorno debe recoger toda la información de los productos asociados a Bloc
 
 **DOCUMENTACIÓN DE REFERENCIA**
 
-|Guía Funcional|   |Guía Técnica|   |Guía Configuración|   |GTU|    
+|Guía Técnica|   |Guía Funcional|   |Guía Configuración|   |GTU|    
 
 
 
