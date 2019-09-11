@@ -1,37 +1,98 @@
-.. BlocksFrontPage documentation master file, created by
-   sphinx-quickstart on Mon Jul 29 13:00:49 2019.
+.. BlocksInCloud Data Lake documentation master file, created by
+   sphinx-quickstart on Wed Sep  4 18:37:15 2019.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-=============
-DOCUMENTATION
-=============
-	
-|espacio_informativo|
+=========
+Data Lake
+=========
+
+.. centered:: |image0|
+
+Revisión: 09-sep-2019 Equipo DataLake
+
+La línea de trabajo DataLake consiste en la creación del repositorio de datos en bruto que alimentan el resto de los sistemas de Telepizza y de donde se nutren tanto el MDM para configurarlos como el resto de las aplicaciones como Store donde se visualizan.
+
+El DataLake debe además cumplir una serie de parámetros técnicos para que dichas aplicaciones puedan alimentarse de la manera correcta y que los datos que lleguen puedan ser entendidos correctamente.
+
+Además, al tratarse de datos confidenciales, el Datalake debe cumplir una serie de premisas de seguridad relevantes de modo que protejan la información que contienen.
+
+Una de las ventajas de un datalake es que puede normalizarse (establecer un patrón) y enriquecerse (combinar información para mayor utilidad). Se puede:
+
+-  Extraer metadatos
+
+-  Convertir formatos
+
+-  Extraer entidades
+
+-  Reticular
+
+-  Agregar
+
+**USUARIOS**
+
+En este apartado se describirán todos los usuarios que van a acceder al sistema.
+
+-  *Responsables de Producto:* Antonio Remesal
+
+-  *Documentalistas:* Departamento de Control de Datos
+
+-  *Responsables del proyecto:* David Expósito y Ana Martinez Used
+
+**ALCANCE**
+
+Este entorno debe recoger toda la información de los productos asociados a BlockInCloud, y aquellos que esta Suite necesita para su funcionamiento. Se incluirán en el mismo todas las versiones de la documentación que estén o puedan estar en uso.
+
+**DOCUMENTACIÓN DE REFERENCIA**
+
+|Guía Técnica|   |Guía Funcional|   |Guía Configuración|   |GTU|    
 
 
-|linea_api| |linea_datalake| |linea_academy| 
 
-|MDM| |linea_billing|
+.. |image0| image:: media/image1.png
+   :width: 2.73333in
+   :height: 3.15357in
 
 
-.. |espacio_informativo| image:: media/espacio_informativo.png
-   :target: https://frontpagebib.readthedocs.io/en/latest/
-   :width: 100%
    
-.. |linea_api| image:: media/logo_api.png
-   :target: https://apificacion.readthedocs.io/en/latest/
-   :width: 32%
-.. |linea_datalake| image:: media/logo_datalake.png
-   :target: https://data-lake.readthedocs.io/en/latest/
-   :width: 32%
-.. |linea_academy| image:: media/logo_academy.png
-   :target: https://academy.readthedocs.io/en/latest/
-   :width: 32%
-.. |linea_MDM| image:: media/logo_mdm.png
-   :target: https://docsrst.readthedocs.io/es/latest/rst_docs/es_es/guia_configuracion/indice_configuracion.html
-   :width: 32%
-.. |linea_billing| image:: media/logo_billing.png
-   :target: https://docsrst.readthedocs.io/es/latest/rst_docs/es_es/guia_configuracion/indice_configuracion.html
-   :width: 32%
+.. |Guía Técnica| image:: media/logo_tecnica.png
+   :target: https://data-lake.readthedocs.io/en/latest/en/technical_documentation/LAKEGT20190830_journey_fomento_uso_app.html
+   :width: 20%   
+.. |Guía Funcional| image:: media/logo_funcional.png
+   :target: https://data-lake.readthedocs.io/en/latest/es/guia_funcional/lakegf20190904marketingcloud.html
+   :width: 20%
+.. |Guía Configuración| image:: media/logo_configuracion.png
+   :width: 20%   
+.. |GTU| image:: media/logo_gtu.png
+   :width: 20%
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   :caption: Guía Técnica:
    
+   en/technical_documentation/LAKEGT20190830_journey_fomento_uso_app
+ 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   :caption: Guía Funcional:
+   
+   es/guia_funcional/lakegf20190904marketingcloud
+   es/guia_funcional/lakegf20190904servicecloud
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:   
+   :caption: Guía de configuración:
+   
+  
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   :caption: Glosario:
+   
+   
+
+
+
