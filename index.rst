@@ -33,11 +33,11 @@ Una de las ventajas de un datalake es que puede normalizarse (establecer un patr
 
 En este apartado se describirán todos los usuarios que van a acceder al sistema.
 
--  *Responsables de Producto:* Los responsables de Producto asumen la responsabilidad de mantener actualizada y operativa la documentación y los contenidos formativos e informativos, que los diferentes usuarios puedan necesitar para trabajar con el producto de forma adecuada.
+-  *Responsables de Producto:* Antonio Remesal
 
--  *Documentalistas:* Las personas que pueden necesitar acceder a esta información para poder entender el funcionamiento del Repositorio Documental.
+-  *Documentalistas:* Departamento de Control de Datos
 
--  *Responsables del proyecto:* Ellos podrán ver en este entorno cómo va la documentación, y si se está desarrollando correctamente la información del proyecto.
+-  *Responsables del proyecto:* David Expósito y Ana Martinez Used
 
 **ALCANCE**
 
