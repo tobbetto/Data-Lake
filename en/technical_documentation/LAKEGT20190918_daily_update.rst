@@ -66,7 +66,7 @@ The Data Extensions “ClientesTelepizza” and “Portugal_ClientesTelepizza”
 
 .. |image0| image:: media/image1.png
    :width: 3.13333in
-   :height: 4.27361in
+   :height: 3.87361in
 .. |image1| image:: media/image5.png
    :width: 6.29167in
    :height: 1.29167in
