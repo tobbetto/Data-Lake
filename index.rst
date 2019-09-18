@@ -71,8 +71,11 @@ Este entorno debe recoger toda la información de los productos asociados a Bloc
    :hidden:
    :caption: Guía Técnica:
    
-   en/technical_documentation/LAKEGT20190830_journey_fomento_uso_app
- 
+   en/technical_documentation/LAKEGT20190918_journey_fomento_uso_app
+   en/technical_documentation/LAKEGT20190918_daily_update
+   en/technical_documentation/LAKEGT20190918_data_to_dw
+   en/technical_documentation/LAKEGT20190918_journey_desintermediacion
+   
 .. toctree::
    :maxdepth: 1
    :hidden:

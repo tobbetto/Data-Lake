@@ -1,0 +1,79 @@
+select a.ID,a.Id_Contacto__c,a.AccountId,a.ContactKey,a.CambiaSegmento,
+    a.Email,a.MC_MobilePhone,a.Fecha_Ultimo_Envio,
+	a.Fecha_Ultimno_Pedido_Mediado__c,a.TP_Ticket_Medio__c
+from ClientesTelepizza a
+where a.CambiaSegmento = 0
+and a.Fecha_Ultimno_Pedido_Mediado__c >= cast(DATEADD(MONTH,-1,getdate()) as date)
+and a.TP_Ticket_Medio__c > 0
+and a.TP_Ticket_Medio__c  is not null
+and a.Fecha_Ultimo_Envio <= cast(getdate()-3 as date)
+and a.ID not in (select b.ID from ESP_VT_Desintermediacion_Historico b 
+where b.Id=a.Id and b.Fecha_Proceso > getdate()-90)
+
+***********************************************************************************************
+
+select top 10 percent *
+from ESP_VT_Desintermediacion
+where TP_Ticket_Medio__c <= 10
+order by newid()
+
+***********************************************************************************************
+
+Select 1 as GrupoControl,a.Id,a.ContactKey 
+from ESP_VT_Desintermediacion a
+join ESP_VT_Desintermediacion_GC b on a.Id=b.Id
+
+***********************************************************************************************
+
+select * 
+from ESP_VT_Desintermediacion 
+where GrupoControl = 0
+
+***********************************************************************************************
+
+Select 'TM10' as Segmentacion_Journey, id, contactkey 
+from ESP_VT_Desintermediacion_SinGC 
+where TP_Ticket_Medio__c <= 10
+
+***********************************************************************************************
+
+Select top 50 percent  'A' as Promocion_Journey, id, contactkey 
+from ESP_VT_Desintermediacion_SinGC 
+where Segmentacion_Journey = 'TM10' 
+order by newid()
+
+***********************************************************************************************
+
+Select c.cupon,
+       b.Id,
+       b.ContactKey
+From (
+SELECT Id,ContactKey, ROW_NUMBER() OVER (ORDER BY Id) as tp_rank
+from ESP_VT_Desintermediacion_SinGC a
+where (a.Segmentacion_Journey='TM10' and a.Promocion_Journey = 'A') 
+) b
+left Join (
+SELECT cupon, ROW_NUMBER() OVER (ORDER BY cupon) as c_rank
+from ESP_VT_Desintermediacion_Cupones_TM10_A
+where Asignado = 0 
+) c
+ON b.tp_rank = c.c_rank
+
+***********************************************************************************************
+
+Select 1 as Asignado, GETDATE() as FechaAsignacion, a.Cupon 
+from ESP_VT_Desintermediacion_SinGC a
+join ESP_VT_Desintermediacion_Cupones_TM10_A b on a.Cupon=b.Cupon
+
+***********************************************************************************************
+
+select *
+from ESP_VT_Desintermediacion_SinGC
+where cupon is null
+
+***********************************************************************************************
+
+Select getDate() as Fecha_Proceso, id, contactkey
+from ESP_VT_Desintermediacion 
+
+***********************************************************************************************
