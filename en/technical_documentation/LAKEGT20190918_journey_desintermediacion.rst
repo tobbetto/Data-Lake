@@ -273,21 +273,21 @@ The settings applied are below:
 
 -  Activities:
 
-   -  Decision Split for segments:
+	-  Decision Split for segments:
 
 |image3|
 
-   -  Decision Split for promotions:
+	-  Decision Split for promotions:
 
 |image4|
 
-   -  Einstein STO
+	-  Einstein STO
 
-   -  Email: Templates “Desinter0719 TM10 A”, “Desinter0719 TM10 A Reminder”, “Desinter0719 TM10 B”, “Desinter0719 TM10 B Reminder”, “Desinter0719 TM10-20 A”, “Desinter0719 TM10-20 A Reminder”, “Desinter0719 TM10-20 B”, “Desinter0719 TM10-20 B Reminder”, “Desinter0719 TM20 A”, “Desinter0719 TM20 A Reminder”, “Desinter0719 TM20 B” and “Desinter0719 TM20 B Reminder”.
+	-  Email: Templates “Desinter0719 TM10 A”, “Desinter0719 TM10 A Reminder”, “Desinter0719 TM10 B”, “Desinter0719 TM10 B Reminder”, “Desinter0719 TM10-20 A”, “Desinter0719 TM10-20 A Reminder”, “Desinter0719 TM10-20 B”, “Desinter0719 TM10-20 B Reminder”, “Desinter0719 TM20 A”, “Desinter0719 TM20 A Reminder”, “Desinter0719 TM20 B” and “Desinter0719 TM20 B Reminder”.
 
-   -  Wait By Duration: 6 days and 1 day.
+	-  Wait By Duration: 6 days and 1 day.
 
-   -  Engagement Split: Message Metrics “Opens”.
+	-  Engagement Split: Message Metrics “Opens”.
 
 .. |image0| image:: media/image1.png
    :width: 2.73333in
