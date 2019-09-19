@@ -187,7 +187,7 @@ The steps STEP 8.1, STEP 11.1 and STEP 14.1 assign to promotion A and STEP 9.1, 
    -  Query:
 
 
-   .. literalinclude:: code/Code_Desintermediacion.txt
+.. literalinclude:: code/Code_Desintermediacion.txt
    :language: guess
    :lines: 47-60
    :linenos:
@@ -271,34 +271,34 @@ The settings applied are below:
 
 -  Activities:
 
--  Decision Split for segments:
+   -  Decision Split for segments:
 
 |image3|
 
--  Decision Split for promotions:
+   -  Decision Split for promotions:
 
 |image4|
 
--  Einstein STO
+   -  Einstein STO
 
--  Email: Templates “Desinter0719 TM10 A”, “Desinter0719 TM10 A Reminder”, “Desinter0719 TM10 B”, “Desinter0719 TM10 B Reminder”, “Desinter0719 TM10-20 A”, “Desinter0719 TM10-20 A Reminder”, “Desinter0719 TM10-20 B”, “Desinter0719 TM10-20 B Reminder”, “Desinter0719 TM20 A”, “Desinter0719 TM20 A Reminder”, “Desinter0719 TM20 B” and “Desinter0719 TM20 B Reminder”.
+   -  Email: Templates “Desinter0719 TM10 A”, “Desinter0719 TM10 A Reminder”, “Desinter0719 TM10 B”, “Desinter0719 TM10 B Reminder”, “Desinter0719 TM10-20 A”, “Desinter0719 TM10-20 A Reminder”, “Desinter0719 TM10-20 B”, “Desinter0719 TM10-20 B Reminder”, “Desinter0719 TM20 A”, “Desinter0719 TM20 A Reminder”, “Desinter0719 TM20 B” and “Desinter0719 TM20 B Reminder”.
 
--  Wait By Duration: 6 days and 1 day.
+   -  Wait By Duration: 6 days and 1 day.
 
--  Engagement Split: Message Metrics “Opens”.
+   -  Engagement Split: Message Metrics “Opens”.
 
 .. |image0| image:: media/image1.png
    :width: 2.73333in
    :height: 3.15357in
-.. |image1| image:: media/image2.png
+.. |image1| image:: media/image7.png
    :width: 6.34236in
    :height: 5.87994in
-.. |image2| image:: media/image3.png
+.. |image2| image:: media/image8.png
    :width: 5.08681in
    :height: 9.04722in
-.. |image3| image:: media/image4.png
+.. |image3| image:: media/image9.png
    :width: 5.06736in
    :height: 4.26736in
-.. |image4| image:: media/image5.png
+.. |image4| image:: media/image10.png
    :width: 4.83403in
    :height: 2.56042in
