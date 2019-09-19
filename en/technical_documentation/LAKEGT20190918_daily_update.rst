@@ -65,8 +65,8 @@ The Data Extensions “ClientesTelepizza” and “Portugal_ClientesTelepizza”
 -  The fifth step updates the “Num_Envios_90d” field in the Data Extension “ClientesTelepizza” with the value calculated with the DataView “_Sent”.
 
 .. |image0| image:: media/image1.png
-   :width: 3.13333in
-   :height: 3.87361in
+   :width: 2.73333in
+   :height: 3.15357in
 .. |image1| image:: media/image5.png
    :width: 6.29167in
    :height: 1.29167in
